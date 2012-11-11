@@ -1,0 +1,124 @@
+=head1 NAME
+
+Module::Build::Pluggable::XSUtil::Cookbook - cookbook for XSUtil
+
+=head1 DESCRIPTION
+
+This document describes porting from L<Module::Install::XSUtil>
+
+=head1 FUNCTIONS
+
+=over 4
+
+=item -g Option
+
+    use Module::Build::Pluggable (
+        'XSUtil',
+    );
+
+L<Module::Build::Pluggable::XSUtil> supports it.
+
+=item cc_available
+
+    $builder->have_c_compiler()
+
+Module::Build supports to check the system having compiler natively.
+
+=item c99_available
+
+    use Devel::CheckCompiler;
+
+    my $c99_available = check_c99();
+
+Use L<Devel::CheckCompiler>.
+
+=item want_xs()
+
+    use Dist::WantXS;
+    my $want_xs = want_xs();
+
+L<Dist::WantXS> provides this feature.
+
+=item use_ppport()
+
+    use Module::Build::Pluggable (
+        'PPPort'
+    );
+
+L<Module::Build::Pluggable::PPPort> provides this feature.
+
+=item use_xshelper()
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'xshelper' => 1,
+        },
+    );
+
+L<Module::Build::Pluggable::XSHelper> provides this feature.
+
+=item cc_warnings()
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            cc_warnings => 1,
+        },
+    );
+
+L<Moule::Build::Pluggable::XSUtil> provides this feature.
+
+=item cc_define(@macros)
+
+    Module::Build->new(
+        extra_compiler_flags => join(' ', @macros)
+    );
+
+=item cc_src_paths(@source_paths)
+
+    Module::Build->new(
+        c_source => \@source_paths
+    );
+
+=item cc_include_paths(@include_paths)
+
+    Module::Build->new(
+        include_dirs => \@include_paths
+    );
+
+=item cc_libs(@libs)
+
+    Module::Build->new(
+        extra_linker_flags => join(' ', map { "-l$_" } @libs)
+    );
+
+=item cc_assert_lib(%args)
+
+    use Module::Build::Pluggable (
+        'CheckLib' => {
+            %args
+        },
+    );
+
+L<Module::Build::Pluggable::CheckLib> provides this feature.
+
+=item requires_c99()
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            c99 => 1,
+        },
+    );
+
+L<Module::Build::Pluggable::AssertC99> provides this feature.
+
+=item requires_cplusplus()
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'c++' => 1,
+        },
+    );
+
+L<Module::Build::Pluggable::AssertCPlusPlus> provides this feature.
+
+=back

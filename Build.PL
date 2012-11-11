@@ -13,16 +13,21 @@ my $build = Module::Build->new(
     configure_requires   => { 'Module::Build' => '0.38' },
     requires             => {
         perl => '5.010001',
-        # 'Exporter'                      => '0',
         'parent'                        => '0',
-        # 'Plack'                         => '0.9949',
+        'Exporter'                      => '0',
+        'Devel::PPPort'                 => 3.19,
+        'XSLoader'                      => 0.02,
+        'ExtUtils::ParseXS'             => '2.21',
+        'Devel::CheckLib'               => 0.04,
+        'Devel::CheckCompiler'          => 0,
+        'Module::Build::Pluggable'      => 0.04,
     },
+
+    needs_compiler => 1, # really?
 
     no_index    => { 'directory' => [ 'inc' ] },
     name        => 'Module-Build-Pluggable-XSUtil',
     module_name => 'Module::Build::Pluggable::XSUtil',
-
-    # script_files => [''],
 
     test_files => (-d '.git' || $ENV{RELEASE_TESTING}) ? 't/ xt/' : 't/',
     recursive_test_files => 1,
