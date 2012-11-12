@@ -7,9 +7,11 @@ our $VERSION = '0.01';
 
 sub WriteFile {
     my $path = shift || 'xshelper.h';
-    open my $fh, '>', $path or die "Cannot open file $path: $!";
+    open my $fh, '>', $path
+        or return 0;
     print {$fh} _xshelper_h();
     close $fh;
+    return 1;
 }
 
 sub _xshelper_h {
@@ -146,6 +148,8 @@ It's written by gfx.
 
 "WriteFile" takes one optional argument. When called with one argument, it expects to be passed a filename. When called with no
 arguments, it defaults to the filename xsutil.h.
+
+The function returns a true value if the file was written successfully.  Otherwise it returns a false value.
 
 =back
 
