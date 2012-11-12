@@ -1,4 +1,4 @@
-package Dist::WantXS;
+package Devel::WantXS;
 use strict;
 use warnings;
 use utf8;
@@ -6,24 +6,24 @@ use parent qw/Exporter/;
 
 our @EXPORT = qw/want_xs/;
 
-my $want_xs;
+our $_CACHE;
 sub want_xs {
     my($self, $default) = @_;
-    return $want_xs if defined $want_xs;
+    return $_CACHE if defined $_CACHE;
 
     # you're using this module, you must want XS by default
     # unless PERL_ONLY is true.
     $default = !$ENV{PERL_ONLY} if not defined $default;
 
-    foreach my $arg(@ARGV){
+    for my $arg(@ARGV){
         if($arg eq '--pp'){
-            return $want_xs = 0;
+            return $_CACHE = 0;
         }
         elsif($arg eq '--xs'){
-            return $want_xs = 1;
+            return $_CACHE = 1;
         }
     }
-    return $want_xs = $default;
+    return $_CACHE = $default;
 }
 
 1;
@@ -31,11 +31,11 @@ __END__
 
 =head1 NAME
 
-Dist::WantXS - user needs pp?
+Devel::WantXS - user needs pp?
 
 =head1 SYNOPSIS
 
-    use Dist::WantXS;
+    use Devel::WantXS;
 
     if (want_xs()) {
         ... # setup to compile

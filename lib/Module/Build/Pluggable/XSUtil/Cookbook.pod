@@ -34,10 +34,10 @@ Use L<Devel::CheckCompiler>.
 
 =item want_xs()
 
-    use Dist::WantXS;
+    use Devel::WantXS;
     my $want_xs = want_xs();
 
-L<Dist::WantXS> provides this feature.
+L<Devel::WantXS> provides this feature.
 
 =item use_ppport()
 
