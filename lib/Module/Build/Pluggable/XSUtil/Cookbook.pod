@@ -42,10 +42,12 @@ L<Devel::WantXS> provides this feature.
 =item use_ppport()
 
     use Module::Build::Pluggable (
-        'PPPort'
+        'XSUtil' => {
+            ppport => 1,
+        },
     );
 
-L<Module::Build::Pluggable::PPPort> provides this feature.
+L<Module::Build::Pluggable::XSUtil> provides this feature.
 
 =item use_xshelper()
 
@@ -55,7 +57,7 @@ L<Module::Build::Pluggable::PPPort> provides this feature.
         },
     );
 
-L<Module::Build::Pluggable::XSHelper> provides this feature.
+L<Module::Build::Pluggable::XSUtil> provides this feature.
 
 =item cc_warnings()
 
@@ -109,7 +111,7 @@ L<Module::Build::Pluggable::CheckLib> provides this feature.
         },
     );
 
-L<Module::Build::Pluggable::AssertC99> provides this feature.
+L<Module::Build::Pluggable::XSUtil> provides this feature.
 
 =item requires_cplusplus()
 
@@ -119,6 +121,6 @@ L<Module::Build::Pluggable::AssertC99> provides this feature.
         },
     );
 
-L<Module::Build::Pluggable::AssertCPlusPlus> provides this feature.
+L<Module::Build::Pluggable::XSUtil> provides this feature.
 
 =back
