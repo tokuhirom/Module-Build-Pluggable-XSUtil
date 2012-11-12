@@ -58,3 +58,13 @@ Gosuke
 Miyashita
 mysqldiff
 mmm
+ppport
+xs
+xshelper
+xsutil
+XS
+Goro
+Fuji
+WriteFile
+gfx
+pp

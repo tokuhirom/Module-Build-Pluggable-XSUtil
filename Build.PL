@@ -19,7 +19,7 @@ my $build = Module::Build->new(
         'XSLoader'                      => 0.02,
         'ExtUtils::ParseXS'             => '2.21',
         'Devel::CheckLib'               => 0.04,
-        'Devel::CheckCompiler'          => 0,
+        'Devel::CheckCompiler'          => 0.02,
         'Module::Build::Pluggable'      => 0.04,
     },
 

@@ -2,7 +2,6 @@ package Devel::XSHelper;
 use strict;
 use warnings;
 use utf8;
-use Devel::XSHelper;
 
 our $VERSION = '0.01';
 
@@ -123,4 +122,36 @@ XSHELPER_H
 }
 
 1;
+__END__
+
+=head1 NAME
+
+Devel::XSHelper - xshelper.h
+
+=head1 SYNOPSIS
+
+    use Devel::XSHelper;
+    Devel::XSHelper::WriteFile('xshelper.h');
+
+=head1 DESCRIPTION
+
+This module writes xshelper.h. xshelper.h is a utility header for xs.
+It's written by gfx.
+
+=head1 FUNCTIONS
+
+=over 4
+
+=item WriteFile
+
+"WriteFile" takes one optional argument. When called with one argument, it expects to be passed a filename. When called with no
+arguments, it defaults to the filename xsutil.h.
+
+=back
+
+=head1 AUTHOR
+
+Goro Fuji
+
+Tokuhiro Matsuno
 

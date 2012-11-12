@@ -178,11 +178,95 @@ Module::Build::Pluggable::XSUtil - Utility for XS
 
 Module::Build::Pluggable::XSUtil is a utility for xs library.
 
+This library is port of L<Module::Install::XSUtil>
+
+=head1 OPTIONS
+
+=over 4
+
+=item c++
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'c++' => 1,
+        },
+    );
+
+This option checks C++ compiler's availability. If it's not available, Build.PL exits by 0.
+
+=item c99
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'c99' => 1,
+        },
+    );
+
+This option checks C99 compiler's availability. If it's not available, Build.PL exits by 0.
+
+=item ppport
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'ppport' => 1,
+        },
+    );
+
+Generate ppport.h automatically. If you want to specify the path for ppport.h, use following form:
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'ppport' => 'lib/My/ppport.h',
+        },
+    );
+
+If you want to specify the version of ppport.h, use configure_requires in C<< Module::Build::Pluggable->new >>.
+
+=item xshelper
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'xshelper' => 1,
+        },
+    );
+
+XSUtil generates xshelper.h. If you want to specify the path for xsutil.h, use following form:
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'xshelper' => 'lib/My/xshelper.h',
+        },
+    );
+
+XSUtil generates ppport.h to same directory(xshelper.h depend to ppport.h).
+
+=item cc_warnings
+
+    use Module::Build::Pluggable (
+        'XSUtil' => {
+            'cc_warnings' => 1,
+        },
+    );
+
+This option enables warnings flag for compiler.
+
+=back
+
+=head1 Options for Build.PL
+
+Under the control of this module, F<Build.PL> accepts C<-g> option, which
+sets C<Module::Build>'s C<extra_compiler_flags> C<-g> (or something like). It will disable
+optimization and enable some debugging features.
+
 =head1 AUTHOR
+
+Goro Fuji, is original author of Module::Install::XSUtil.
 
 Tokuhiro Matsuno E<lt>tokuhirom AAJKLFJEF@ GMAIL COME<gt>
 
 =head1 SEE ALSO
+
+L<Module::Install::XSUtil>, L<Module::Build::Pluggable>
 
 =head1 LICENSE
 
