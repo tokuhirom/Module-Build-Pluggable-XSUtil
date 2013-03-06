@@ -2,7 +2,7 @@ package Module::Build::Pluggable::CheckLib;
 use strict;
 use warnings;
 use utf8;
-use 5.010001;
+use 5.008005;
 our $VERSION = '0.01';
 use parent qw/Module::Build::Pluggable::Base/;
 
