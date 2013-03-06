@@ -1,4 +1,8 @@
 Revision history for Perl extension Module::Build::Pluggable::XSUtil
 
+1.00 2013-03-07T06:54:23
+
+    - depend to perl 5.8 instead of 5.10
+
 0.01    Fri Nov  9 11:25:40 2012
     - original version
