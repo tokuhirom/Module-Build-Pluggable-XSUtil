@@ -1,5 +1,7 @@
 Revision history for Perl extension Module::Build::Pluggable::XSUtil
 
+{{$NEXT}}
+
 1.00 2013-03-07T06:54:23
 
     - depend to perl 5.8 instead of 5.10

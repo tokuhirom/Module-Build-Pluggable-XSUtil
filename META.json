@@ -1,0 +1,83 @@
+{
+   "abstract" : "Utility for XS",
+   "author" : [
+      "Goro Fuji, is original author of Module::Install::XSUtil."
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v0.0.49, CPAN::Meta::Converter version 2.120921",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Module-Build-Pluggable-XSUtil",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "CPAN::Meta" : "0",
+            "CPAN::Meta::Prereqs" : "0",
+            "Module::Build" : "0.38"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Wordlist::hanekomu" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0.10108",
+            "Test::Pod" : "1.41",
+            "Test::Spelling" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Devel::CheckCompiler" : "0.02",
+            "Devel::CheckLib" : "0.04",
+            "Devel::PPPort" : "3.19",
+            "Exporter" : "0",
+            "ExtUtils::CBuilder" : "0",
+            "ExtUtils::ParseXS" : "2.21",
+            "Module::Build::Pluggable" : "0.04",
+            "Module::Build::Pluggable::Base" : "0",
+            "XSLoader" : "0.02",
+            "parent" : "0",
+            "perl" : "5.008005"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "Test::Module::Build::Pluggable" : "0",
+            "Test::More" : "0.98",
+            "Test::Requires" : "0"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tokuhirom/Module-Build-Pluggable-XSUtil/issues"
+      },
+      "homepage" : "https://github.com/tokuhirom/Module-Build-Pluggable-XSUtil",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tokuhirom/Module-Build-Pluggable-XSUtil.git",
+         "web" : "https://github.com/tokuhirom/Module-Build-Pluggable-XSUtil"
+      }
+   },
+   "version" : "1.00",
+   "x_contributors" : [
+      "hideo55 <hide.o.j55@gmail.com>",
+      "tokuhirom <tokuhirom@gmail.com>"
+   ]
+}
