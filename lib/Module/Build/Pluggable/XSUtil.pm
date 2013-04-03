@@ -75,7 +75,7 @@ sub HOOK_configure {
 
         require ExtUtils::CBuilder;
         my $cbuilder = ExtUtils::CBuilder->new(quiet => 1);
-        $cbuilder->have_cpluplus or do {
+        $cbuilder->have_cplusplus or do {
             warn "This environment does not have a C++ compiler(OS unsupported)\n";
             exit 0;
         };
