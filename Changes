@@ -2,6 +2,11 @@ Revision history for Perl extension Module::Build::Pluggable::XSUtil
 
 {{$NEXT}}
 
+1.01 2013-04-03T20:17:09Z
+
+    - Fixed: typo of method name that is called when c++ flag is true.
+      (hideo55)
+
 1.00 2013-03-07T06:54:23
 
     - depend to perl 5.8 instead of 5.10

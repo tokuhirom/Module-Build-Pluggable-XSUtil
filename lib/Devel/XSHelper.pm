@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = '0.01';
+our $VERSION = '1.01';
 
 sub WriteFile {
     my $path = shift || 'xshelper.h';
