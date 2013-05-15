@@ -8,7 +8,7 @@ use parent qw/Module::Build::Pluggable::Base/;
 
 sub HOOK_configure {
     my $self = shift;
-    unless ($self->have_c_compiler()) {
+    unless ($self->builder->have_c_compiler()) {
         warn "This distribution requires a C compiler, but it's not available, stopped.(OS unsupported)\n";
         exit 0;
     }
