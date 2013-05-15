@@ -20,3 +20,4 @@ README
 /_build_params
 !Build/
 !META.json
+!LICENSE
