@@ -23,9 +23,9 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    no_index    => { 'directory' => [ 'inc' ] },
-    name        => 'Module-Build-Pluggable-XSUtil',
-    module_name => 'Module::Build::Pluggable::XSUtil',
+    name            => 'Module-Build-Pluggable-XSUtil',
+    module_name     => 'Module::Build::Pluggable::XSUtil',
+    allow_pure_perl => 0,
 
     script_files => [glob('script/*'), glob('bin/*')],
 

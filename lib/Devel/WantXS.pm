@@ -31,7 +31,7 @@ __END__
 
 =head1 NAME
 
-Devel::WantXS - user needs pp?
+Devel::WantXS - user needs pure perl?
 
 =head1 SYNOPSIS
 
@@ -45,7 +45,7 @@ Devel::WantXS - user needs pp?
 
 =head1 DESCRIPTION
 
-This module detects the user need to use pp version or not.
+This module detects the user need to use pure perl version or not.
 
 =head1 FUNCTIONS
 
@@ -55,7 +55,7 @@ This module detects the user need to use pp version or not.
 
 Returns true if the user asked for the XS version or pure perl version of the module.
 
-Will return true if "--xs" is explicitly specified as the argument to Makefile.PL, and false if "--pp" is specified. If neither is explicitly specified, will
+Will return true if C<<--xs>> is explicitly specified as the argument to Makefile.PL, and false if C<<--pp>> is specified. If neither is explicitly specified, will
 return the value specified by $default. If you do not specify the value of $default, then it will be true.
 
 =back

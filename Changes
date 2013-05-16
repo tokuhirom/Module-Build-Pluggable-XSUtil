@@ -2,6 +2,11 @@ Revision history for Perl extension Module::Build::Pluggable::XSUtil
 
 {{$NEXT}}
 
+1.02 2013-05-16T00:00:50Z
+
+    - Fix the problem to which the builder() method not called in M::B::P::CheckLib
+      (hideo55)
+
 1.01 2013-04-03T20:17:09Z
 
     - Fixed: typo of method name that is called when c++ flag is true.

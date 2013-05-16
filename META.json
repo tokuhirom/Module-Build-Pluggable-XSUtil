@@ -4,7 +4,7 @@
       "Goro Fuji, is original author of Module::Install::XSUtil."
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.0.56, CPAN::Meta::Converter version 2.120921",
+   "generated_by" : "Minilla/v0.4.2, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -37,7 +37,7 @@
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion" : "0.10108",
             "Test::Pod" : "1.41",
-            "Test::Spellunker" : "v0.0.16"
+            "Test::Spellunker" : "v0.2.2"
          }
       },
       "runtime" : {
@@ -48,7 +48,7 @@
             "Exporter" : "0",
             "ExtUtils::CBuilder" : "0",
             "ExtUtils::ParseXS" : "2.21",
-            "Module::Build::Pluggable" : "0.04",
+            "Module::Build::Pluggable" : "0.10",
             "Module::Build::Pluggable::Base" : "0",
             "XSLoader" : "0.02",
             "parent" : "0",
@@ -75,9 +75,9 @@
          "web" : "https://github.com/tokuhirom/Module-Build-Pluggable-XSUtil"
       }
    },
-   "version" : "1.01",
+   "version" : "1.02",
    "x_contributors" : [
       "hideo55 <hide.o.j55@gmail.com>",
-      "Tokuhiro Matsuno <tokuhirom@gmail.com>"
+      "tokuhirom <tokuhirom@gmail.com>"
    ]
 }

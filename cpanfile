@@ -3,7 +3,7 @@ requires 'Devel::CheckLib', '0.04';
 requires 'Devel::PPPort', '3.19';
 requires 'Exporter';
 requires 'ExtUtils::ParseXS', '2.21';
-requires 'Module::Build::Pluggable', '0.04';
+requires 'Module::Build::Pluggable', '0.10';
 requires 'XSLoader', '0.02';
 requires 'parent';
 requires 'perl', '5.008005';

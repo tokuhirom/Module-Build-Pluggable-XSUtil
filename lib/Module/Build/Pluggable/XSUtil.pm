@@ -2,7 +2,7 @@ package Module::Build::Pluggable::XSUtil;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 use parent qw/Module::Build::Pluggable::Base/;
 use Config;
 use Carp ();
@@ -158,6 +158,8 @@ __END__
 
 =encoding utf8
 
+=for stopwords XSUtil xshelper
+
 =head1 NAME
 
 Module::Build::Pluggable::XSUtil - Utility for XS
@@ -176,7 +178,7 @@ Module::Build::Pluggable::XSUtil - Utility for XS
 
 =head1 DESCRIPTION
 
-Module::Build::Pluggable::XSUtil is a utility for xs library.
+Module::Build::Pluggable::XSUtil is a utility for XS library.
 
 This library is port of L<Module::Install::XSUtil>
 

@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 sub WriteFile {
     my $path = shift || 'xshelper.h';
@@ -137,7 +137,7 @@ Devel::XSHelper - xshelper.h
 
 =head1 DESCRIPTION
 
-This module writes xshelper.h. xshelper.h is a utility header for xs.
+This module writes xshelper.h. xshelper.h is a utility header for XS.
 It's written by gfx.
 
 =head1 FUNCTIONS

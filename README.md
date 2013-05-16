@@ -16,7 +16,7 @@ Module::Build::Pluggable::XSUtil - Utility for XS
 
 # DESCRIPTION
 
-Module::Build::Pluggable::XSUtil is a utility for xs library.
+Module::Build::Pluggable::XSUtil is a utility for XS library.
 
 This library is port of [Module::Install::XSUtil](http://search.cpan.org/perldoc?Module::Install::XSUtil)
 
