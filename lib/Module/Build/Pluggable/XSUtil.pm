@@ -56,7 +56,7 @@ sub HOOK_configure {
 
     # cleanup options
     if ($^O eq 'cygwin') {
-        $self->bulder->add_to_cleanup('*.stackdump');
+        $self->builder->add_to_cleanup('*.stackdump');
     }
 
     # debugging options
