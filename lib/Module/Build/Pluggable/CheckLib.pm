@@ -3,7 +3,7 @@ use strict;
 use warnings;
 use utf8;
 use 5.008005;
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 use parent qw/Module::Build::Pluggable::Base/;
 
 sub HOOK_configure {

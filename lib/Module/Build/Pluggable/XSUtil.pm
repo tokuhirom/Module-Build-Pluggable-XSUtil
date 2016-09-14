@@ -2,7 +2,7 @@ package Module::Build::Pluggable::XSUtil;
 use strict;
 use warnings;
 use 5.008005;
-our $VERSION = '1.02';
+our $VERSION = '1.03';
 use parent qw/Module::Build::Pluggable::Base/;
 use Config;
 use Carp ();

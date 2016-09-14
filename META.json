@@ -75,7 +75,7 @@
          "web" : "https://github.com/tokuhirom/Module-Build-Pluggable-XSUtil"
       }
    },
-   "version" : "1.02",
+   "version" : "1.03",
    "x_authority" : "cpan:TOKUHIROM",
    "x_contributors" : [
       "hideo55 <hide.o.j55@gmail.com>",
