@@ -18,7 +18,7 @@ Module::Build::Pluggable::XSUtil - Utility for XS
 
 Module::Build::Pluggable::XSUtil is a utility for XS library.
 
-This library is port of [Module::Install::XSUtil](http://search.cpan.org/perldoc?Module::Install::XSUtil)
+This library is port of [Module::Install::XSUtil](https://metacpan.org/pod/Module::Install::XSUtil)
 
 # OPTIONS
 
@@ -98,11 +98,11 @@ optimization and enable some debugging features.
 
 Goro Fuji, is original author of Module::Install::XSUtil.
 
-Tokuhiro Matsuno <tokuhirom AAJKLFJEF@ GMAIL COM>
+Tokuhiro Matsuno &lt;tokuhirom AAJKLFJEF@ GMAIL COM>
 
 # SEE ALSO
 
-[Module::Install::XSUtil](http://search.cpan.org/perldoc?Module::Install::XSUtil), [Module::Build::Pluggable](http://search.cpan.org/perldoc?Module::Build::Pluggable)
+[Module::Install::XSUtil](https://metacpan.org/pod/Module::Install::XSUtil), [Module::Build::Pluggable](https://metacpan.org/pod/Module::Build::Pluggable)
 
 # LICENSE
 
